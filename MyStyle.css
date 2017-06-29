@@ -1,0 +1,157 @@
+/*
+CSS file compiled for Euipoi by Zukazamme
+*/
+
+/* Fonts */
+@font-face {
+    font-family: "wtahoma";
+    src: url("/fonts/tahoma-webfont.woff") format('woff');
+}
+
+/*Covers main body and big stuff*/
+body {background-color: #BAB6AB; color:#3a3a3a; font:76% Verdana,Tahoma,Arial,sans-serif; line-height:1.4em; margin:0 auto; padding:15px 0;}
+#wrap {
+ background:#D8D3C7; color:#303030; margin:0 auto; width: 65%; padding: 30px; border-color: #E8E3D7; border-width: 15px; border-style: solid;
+ min-width: 750px;
+}
+#header {
+ background-image:url('/img/therianguidepremium.png'); background-repeat: no-repeat; background-position: center; background-size:cover; 
+ color:#505050; height:300px; width: 100%;
+ -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/therianguidepremium.png',sizingMethod='scale')";
+}
+#body-text {
+ background-color: #E8E3D7;
+ border-color: #000;
+ border-style: solid;
+ border-width: 1px;
+ padding: 20px;
+ font-size: 1.3em;
+ min-height: 450px;
+}
+
+
+/*For the navigation bar*/
+#navbar {padding:0; text-align:center; font-size: 1.6em; font-family:wtahoma,Tahoma,Arial,Sans-Serif}
+#navbar ul.menu {list-style:none; margin:0; padding:0; background-color: #294F53; }
+#navbar ul.menu li {display:inline-block; padding: 5px;}
+#navbar ul.menu li a {
+ text-decoration:none; display:inline-block; 
+ color:#FFF; font-size:1em; font-weight:700; padding:10px;
+}
+#navbar ul.menu li a:hover {background-color:#fff; color:#6B3A38;}
+
+/*For the stuff off to the left*/
+#leftside {clear:left; float:left; margin:10px 10px 10px; padding:0; width:150px;}
+#leftside .announce {border-bottom:1px solid #d8d8d8; border:1px solid #000; clear:left; color:#505050; line-height:1.3em; padding:5px 5px 5px; width:134px;}
+#leftside p,.announce p {font-size:0.9em;}
+
+/*For any notices you want on the right*/
+#notices {float:right; margin:0 0 10px; padding:0 0 20px 20px; width:160px;}
+#notices p {font-size:0.9em; line-height:1.3em; margin:0 0 1.5em; padding:0;}
+#notices h2 {font-size:1.5em; font-weight:400; letter-spacing:-1px; margin:0 0 6px;}
+#notices form {height: 30px;}
+
+/*For the main body*/
+#main {line-height:1.5em; margin:10px 0 10px 160px; padding:0; text-align:left;}
+#mainsmall {line-height:1.5em; margin:10px 10px 10px 160px; padding:0; text-align:justify;}
+#main h2 {font-size:1.8em; font-weight:400; letter-spacing:-1px; margin:8px 0 10px; padding:0;}
+#main h3 {font-size:1.5em; font-weight:400; margin:6px 0; padding:0;}
+#main ul,#main ol {margin:0 0 16px 20px; padding:0;}
+#main ul ul,#main ol ol {margin:2px 0 2px 15px;}
+#main li {margin:10px 20px 2px 5px; padding:0 0 0 4px;}
+
+/*For the expanding data groups*/
+.expandable {
+  background-color: #F4F4F4;  border-color: #D8D8D8 #D8D8D8 #D8D8D8 #CCC; border-width: 1px 1px 1px 4px; border-style: solid; 
+  width:90%; margin-left:1%; overflow:hidden;
+  padding: 0 20px 0 20px;
+}
+.expandable > div {
+ text-align: left;
+ white-space: nowrap;
+}
+.expandable > p {
+ text-align: justify;
+}
+@media only screen and (max-width : 1200px) {
+ .expandable > div {
+   font-size:18px;
+ }
+}
+.closed, .open{font-size:1.5em; font-weight:400; height:20px; margin:6px; padding:0;}
+.closed {background:url(img/collapsed.png) no-repeat right;}
+.closed:hover {background:url(img/expanded.png) no-repeat right;}
+.open {background:url(img/expanded.png) no-repeat right;}
+.open:hover {background:url(img/collapsed.png) no-repeat right;}
+
+/*DustyCode*/
+.spoiler-wrap {
+  background-color: #F4F4F4;  border-color: #D8D8D8 #D8D8D8 #D8D8D8 #CCC; border-width: 1px 1px 1px 4px; border-style: solid; 
+  width:90%; margin-left:1%;
+  padding: 0 20px 0 20px;
+}
+.spoiler-wrap > div {
+ text-align: left;
+}
+.spoiler-wrap > p {
+ text-align: justify;
+}
+@media only screen and (max-width : 1200px) {
+ .spoiler-wrap > div {
+   font-size:18px;
+ }
+}
+.spoiler{font-size:1.5em; font-weight:400; height:20px; margin:6px; padding:0; background:url(img/collapsed.png) no-repeat right;}
+.spoiler-active{background:url(img/expanded.png) no-repeat right;}
+
+
+/*For the stuff at the bottom*/
+#footer {border-top:2px solid #dadada; clear:both; color:#666; font-size:0.9em; margin:0 auto; padding:8px 0; text-align:center; width:100%;}
+#footer p {margin:0; padding:0;}
+#footer a {background:inherit; color:#666; font-weight:400; text-decoration:none;}
+#footer a:hover {text-decoration:underline;}
+#footer span {font-size:1.2em;}
+
+/*For tables and forms and the likes*/
+table {border:1px solid #d8d8d8; border-collapse:collapse; line-height:18px; width:550px; padding:0;}
+caption {font-size:1.5em; font-weight:400; margin:0; padding:6px 0 8px; text-align:left;}
+th {background:#eaeaea; color:#505050; text-align:left; vertical-align:middle;}
+td {background:#f4f4f4; color:#303030; font-size:0.9em; padding:7px; text-align:left;}
+input,textarea {border:1px solid #ccc; font-family:Verdana,Tahoma,Arial,Sans-Serif; font-size:1em; margin:0; padding:4px;}
+label {margin:2px 0 2px 0; font-size:1.2em;}
+textarea {width:400px;}
+
+/*For links and paragraphs and such*/
+a {background:inherit; color:#166090; text-decoration:none; font-weight:700;}
+a:hover {background:inherit; color:#286ea0; text-decoration:underline;}
+a img {border:0;}
+p {margin:0 0 16px;}
+blockquote {background:#f4f4f4; border-bottom:1px solid #d8d8d8; border-left:4px solid #ccc; border-right:1px solid #d8d8d8; border-top:1px solid #d8d8d8; color:#505050; margin:16px; padding:7px 7px 7px 11px;}
+blockquote p {font-size:1.1em; line-height:1.3em; margin:0;}
+
+/*Some formatting options*/
+.announce h2 {margin:0 0 10px; padding:0;}
+.textright {margin:-10px 0 4px; text-align:right;}
+.center {text-align:center;}
+.small {font-size:0.8em;}
+.large {font-size:1.3em;}
+.red {color:red;}
+.green {color:green;}
+.blue {color:blue;}
+.highlighted {background:#f0f0f0; border:1px solid #b0b0b0; color:#303030; padding:3px;}
+.button {background:#f4f4f4; border-bottom:1px solid #d8d8d8; border-left:4px solid #ccc; border-right:1px solid #d8d8d8; border-top:1px solid #d8d8d8; color:#505050; font-weight:400; font-size:1.2em; margin:0 0 15px; padding:7px 7px 7px 11px; width:120px;}
+.left {float:left; margin:10px 10px 5px 0;}
+.right {float:right; margin:10px 0 5px 10px;}
+
+/*Dusty stuff*/
+.introPic {
+ width: 45%;
+}
+
+p, li {
+ text-align: justify;
+}
+
+#main > p {
+ margin-right: 7px;
+}
